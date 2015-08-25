@@ -1,9 +1,11 @@
 def my_collect(arr)
   counter = 0
+  new_array = []
   while counter < arr.length
-        yield arr[counter].upcase!
+        word = arr[counter]
+        new_array << yield(word)
     counter += 1
   end
-  arr
+  new_array
 end
 
