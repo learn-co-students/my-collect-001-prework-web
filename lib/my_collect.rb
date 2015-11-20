@@ -1,8 +1,8 @@
-def my_collect(arr)
+def my_collect(collection)
   i = 0
   return_val = []
-  while i < arr.length
-    yield_return_val = yield(arr[i])
+  while i < collection.length
+    yield_return_val = yield(collection[i])
     return_val << yield_return_val
     i+=1
   end
