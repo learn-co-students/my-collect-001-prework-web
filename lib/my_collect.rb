@@ -1,4 +1,4 @@
-def my_collect(input)
+def my_collect(input) 
   output = []
   input.each do |x|
     v = yield x
