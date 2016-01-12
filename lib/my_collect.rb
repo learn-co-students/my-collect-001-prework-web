@@ -1,10 +1,16 @@
-def my_collect(ary)
+#require 'pry'
+#names = ['mary foss', 'corey foss']
+
+def my_collect(names)
+  split_names = []
   i = 0
-  newary = []
-  while i < ary.size
-    newary.push yield ary[i]
+
+  while i < names.size
+    split_names << yield(names[i])
     i += 1
   end
-  newary
+
+  split_names
 end
 
+#my_collect(names) { |name| name.split(" ").first }
