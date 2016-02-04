@@ -1,12 +1,14 @@
+#empty_array = []
+
 def my_collect(array)
   i = 0
   while i < array.length
-    yield
+    array.map do |x|
+    x.upcase
     i += 1
   end
-  empty_array
+  return array
 end
-
+end
 #my_collect(array) do |name|
-#  name.split(" ").first << empty_array
-#end
+ # name.split(" ").first << empty_array
