@@ -1,16 +1,11 @@
-#empty_array = []
-
 def my_collect(array)
   i = 0
+  b = Array.new
   while i < array.length
-    #yield array[i]
-    array.map do |x|
-    x.upcase
+    b = yield array[i]
     i += 1
   end
-  return array
+  b
 end
-end
-#my_collect(array) do |name|
- # name.split(" ").first << empty_array
 
+#array[i] << empty_array
