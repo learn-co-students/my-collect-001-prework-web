@@ -4,7 +4,7 @@ def my_collect(array)
   i = 0
   while i < array.length
     #yield array[i]
-    array.collect do |x|
+    array.map do |x|
     x.upcase
     i += 1
   end
