@@ -1,11 +1,11 @@
 def my_collect(array)
   i = 0
-  b = Array.new
+  result = []
   while i < array.length
-    b = yield array[i]
+     result << yield(array[i])
     i += 1
   end
-  b
+  result 
 end
 
 #array[i] << empty_array
