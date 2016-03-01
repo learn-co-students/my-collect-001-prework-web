@@ -1,6 +1,9 @@
 def my_collect(students)
-  array = ["RUBY", "JAVASCRIPT", "PYTHON", "OBJECTIVE-C"]
-  array.each do |students|
-    puts "#{students}"
+  i = 0
+  array = []
+  while i < students.length
+  array << yield(students[i])
+    i = i + 1
   end
+  array
 end
