@@ -13,3 +13,5 @@ array1 = []
   #output is taken care of above, now need to return original array
   array1
 end
+
+##this is strange as my error messages are giving me different instructions than the page on Learn...
