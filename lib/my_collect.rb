@@ -8,7 +8,3 @@ def my_collect(array)
   end
   return new_array
 end
-
-my_collect(["hello", "hi", "hello"]) do |item|
-  puts item.upcase
-end
