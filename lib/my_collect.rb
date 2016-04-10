@@ -1,11 +1,11 @@
 def my_collect(array)
+	result =[]
 	ind=0
-	result=[]
-	while ind < array.length
-		result << yield(array[ind]) 
+	while ind < array.length 
+		result << yield(array[ind])
 		ind+=1
 	end 
-	 result
+	result 	
 end 
 
 
