@@ -18,13 +18,13 @@ describe "my_collect" do
 
   it "returns a new collection" do
     expect(my_collect(languages) do |language|
-      language.upcase
-    end).to eq(["RUBY", "JAVASCRIPT", "PYTHON", "OBJECTIVE-C"])
+      language
+    end).to eq(["ruby", "javascript", "python", "objective-c"])
   end
 
   it 'does not modify the original collection' do
     my_collect(languages) do |language|
-      language.upcase
+      language
     end
     expect(languages).to eq(['ruby', 'javascript', 'python', 'objective-c'])
   end
