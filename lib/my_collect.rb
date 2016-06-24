@@ -1,11 +1,9 @@
-def my_collect(array) # put argument(s) here
-  # code here
-  new_array = []
+def my_collect(arr)
+  new_arr = []
   i = 0
-  while i < array.length
-    new_array << yield(array[i])
+  while i < arr.length
+    new_arr << yield(arr[i])
     i += 1
   end
-  new_array
+  new_arr
 end
-
