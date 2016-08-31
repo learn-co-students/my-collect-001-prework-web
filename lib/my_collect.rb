@@ -5,5 +5,5 @@ def my_collect(items)
     modified << yield(items[i])
     i += 1
   end
-  p modified
+  modified
 end
