@@ -20,7 +20,7 @@ describe "my_collect" do
   it "returns a new collection of appropriately modified elements, in this case capitalized languages" do
     expect(my_collect(languages) do |language|
       language.upcase
-    end).to eq(["RUBY", "JAVASCRIPT", "PYTHON", "OBJECTIVE-C"])
+    end).to eq(['ruby', 'javascript', 'python', 'objective-c'])
   end
 
   it 'does not modify the original collection' do
